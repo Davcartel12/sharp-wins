@@ -16,7 +16,7 @@
     appId: "1:877621154657:web:29260f71f290bbdff0ef75"
   };
 
-  var STARTING_DEMO_BALANCE = 100;
+  var STARTING_DEMO_BALANCE = 0;
 
   function loadScript(src) {
     return new Promise(function (res, rej) {
@@ -112,7 +112,7 @@
         delta: STARTING_DEMO_BALANCE,
         balanceBefore: 0,
         balanceAfter: STARTING_DEMO_BALANCE,
-        description: "Welcome bonus — $" + STARTING_DEMO_BALANCE + " demo balance",
+        description: "Account created",
         source: "demo",
         createdAt: firebase.firestore.FieldValue.serverTimestamp()
       });
