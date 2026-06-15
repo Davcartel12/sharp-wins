@@ -105,7 +105,7 @@
       var name = user.displayName || (user.email ? user.email.split("@")[0] : "Player");
       await ref.set({
         uid: user.uid, displayName: name, displayNameLower: name.toLowerCase(),
-        balance: 0, demo: true, wins: 0, losses: 0, totalWinnings: 0,
+        balance: 100, demo: true, wins: 0, losses: 0, totalWinnings: 0,
         photoURL: "", friends: [],
         createdAt: firebase.firestore.FieldValue.serverTimestamp()
       });
